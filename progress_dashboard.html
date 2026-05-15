@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Progress Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f1f5f9; color: #1e293b; }
+
+    header {
+      background: #2563eb; color: #fff; padding: 18px 32px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    header h1 { font-size: 1.3rem; font-weight: 700; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px; }
+
+    /* Search bar */
+    .search-bar {
+      display: flex; gap: 10px; margin-bottom: 28px;
+    }
+    .search-bar input {
+      flex: 1; padding: 10px 16px; border: 1px solid #cbd5e1;
+      border-radius: 8px; font-size: 0.95rem;
+    }
+    .search-bar select {
+      padding: 10px 12px; border: 1px solid #cbd5e1;
+      border-radius: 8px; font-size: 0.95rem;
+    }
+    .search-bar button {
+      padding: 10px 22px; background: #2563eb; color: #fff;
+      border: none; border-radius: 8px; cursor: pointer; font-size: 0.95rem;
+    }
+    .search-bar button:hover { background: #1d4ed8; }
+
+    /* Cards row */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
+    .card {
+      background: #fff; border-radius: 12px; padding: 20px 22px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    }
+    .card .label { font-size: 0.78rem; color: #64748b; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+    .card .value { font-size: 2rem; font-weight: 700; color: #1e293b; }
+    .card .sub   { font-size: 0.82rem; color: #64748b; margin-top: 4px; }
+    .card.trend-improving .value { color: #16a34a; }
+    .card.trend-declining  .value { color: #dc2626; }
+    .card.trend-stable     .value { color: #d97706; }
+
+    /* Charts */
+    .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 28px; }
+    .chart-box {
+      background: #fff; border-radius: 12px; padding: 20px 22px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    }
+    .chart-box h2 { font-size: 0.95rem; font-weight: 600; margin-bottom: 16px; color: #374151; }
+    @media (max-width: 700px) { .charts { grid-template-columns: 1fr; } }
+
+    /* Weak points */
+    .weak-points { background: #fff; border-radius: 12px; padding: 20px 22px; box-shadow: 0 1px 4px rgba(0,0,0,.08); margin-bottom: 28px; }
+    .weak-points h2 { font-size: 0.95rem; font-weight: 600; margin-bottom: 16px; color: #374151; }
+    .wp-item { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+    .wp-label { width: 200px; font-size: 0.88rem; font-weight: 500; }
+    .wp-bar-wrap { flex: 1; height: 12px; background: #e2e8f0; border-radius: 99px; overflow: hidden; }
+    .wp-bar { height: 100%; border-radius: 99px; transition: width .4s; }
+    .wp-bar.critical      { background: #ef4444; }
+    .wp-bar.needs_improvement { background: #f97316; }
+    .wp-pct { font-size: 0.82rem; color: #64748b; width: 44px; text-align: right; }
+
+    /* Attempts table */
+    .attempts-table { background: #fff; border-radius: 12px; padding: 20px 22px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .attempts-table h2 { font-size: 0.95rem; font-weight: 600; margin-bottom: 16px; color: #374151; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th { text-align: left; padding: 8px 10px; border-bottom: 2px solid #e2e8f0; color: #64748b; font-weight: 600; }
+    td { padding: 8px 10px; border-bottom: 1px solid #f1f5f9; }
+    tr:last-child td { border-bottom: none; }
+    .badge {
+      display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 0.75rem; font-weight: 600;
+    }
+    .badge.writing  { background: #dbeafe; color: #1d4ed8; }
+    .badge.speaking { background: #dcfce7; color: #15803d; }
+
+    /* Prediction banner */
+    .prediction-banner {
+      background: linear-gradient(135deg, #eff6ff, #dbeafe);
+      border: 1px solid #bfdbfe; border-left: 4px solid #2563eb;
+      border-radius: 12px; padding: 16px 20px; margin-bottom: 28px;
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .prediction-banner.declining {
+      background: linear-gradient(135deg, #fff7ed, #ffedd5);
+      border-color: #fed7aa; border-left-color: #ea580c;
+    }
+    .prediction-banner.declining .banner-text { color: #9a3412; }
+    .prediction-banner .banner-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 1px; }
+    .prediction-banner .banner-text { font-size: 0.95rem; color: #1e40af; line-height: 1.55; font-weight: 500; }
+
+    /* Skill warnings */
+    .skill-warning {
+      background: #fefce8; border: 1px solid #fde68a;
+      border-left: 4px solid #f59e0b; border-radius: 8px;
+      padding: 12px 16px; margin-bottom: 10px;
+    }
+    .skill-warning .sw-title { font-size: 0.88rem; font-weight: 700; color: #92400e; margin-bottom: 4px; }
+    .skill-warning .sw-advice { font-size: 0.85rem; color: #78350f; }
+
+    /* Empty state */
+    .empty { text-align: center; padding: 60px 20px; color: #94a3b8; }
+    .empty .icon { font-size: 3rem; margin-bottom: 12px; }
+
+    /* Hidden */
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<header>
+  <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+  </svg>
+  <h1>Student Progress Dashboard</h1>
+</header>
+
+<div class="container">
+
+  <div class="search-bar">
+    <input type="text" id="studentInput" placeholder="Enter student ID (e.g. student@email.com)" />
+    <select id="examFilter">
+      <option value="">All Exams</option>
+      <option value="TOEFL">TOEFL</option>
+      <option value="TELC">TELC</option>
+    </select>
+    <select id="taskTypeFilter">
+      <option value="">All Tasks</option>
+      <option value="writing">Writing</option>
+      <option value="speaking">Speaking</option>
+    </select>
+    <button onclick="loadDashboard()">Load Progress</button>
+  </div>
+
+  <div id="emptyState" class="empty">
+    <div class="icon">📊</div>
+    <p>Enter a student ID above to view their progress.</p>
+  </div>
+
+  <div id="dashboard" class="hidden">
+
+    <!-- Summary cards -->
+    <div class="cards">
+      <div class="card">
+        <div class="label">Total Attempts</div>
+        <div class="value" id="cardTotal">—</div>
+      </div>
+      <div class="card">
+        <div class="label">Latest Score</div>
+        <div class="value" id="cardLatest">—</div>
+        <div class="sub" id="cardLatestDenom">/30</div>
+      </div>
+      <div class="card" id="cardPredictionBox">
+        <div class="label">Predicted Next Score</div>
+        <div class="value" id="cardPrediction">—</div>
+        <div class="sub" id="cardTrend"></div>
+      </div>
+      <div class="card">
+        <div class="label">Weak Areas</div>
+        <div class="value" id="cardWeak">—</div>
+        <div class="sub">need attention</div>
+      </div>
+    </div>
+
+    <!-- Prediction banner -->
+    <div id="predictionBanner" class="prediction-banner hidden">
+      <div class="banner-icon">🎯</div>
+      <div class="banner-text" id="predictionMessage"></div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts">
+      <div class="chart-box">
+        <h2>Score Over Time</h2>
+        <canvas id="scoreChart" height="180"></canvas>
+      </div>
+      <div class="chart-box">
+        <h2>Category Breakdown (Latest Attempt)</h2>
+        <canvas id="radarChart" height="180"></canvas>
+      </div>
+    </div>
+
+    <!-- Weak points -->
+    <div class="weak-points">
+      <h2>Missing Point Detection</h2>
+      <div id="skillWarningsList"></div>
+      <div id="weakPointsList"></div>
+    </div>
+
+    <!-- Attempts table -->
+    <div class="attempts-table">
+      <h2>Attempt History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Exam</th>
+            <th>Score /30</th>
+            <th>Task Prompt</th>
+          </tr>
+        </thead>
+        <tbody id="attemptsBody"></tbody>
+      </table>
+    </div>
+
+  </div><!-- /dashboard -->
+</div>
+
+<script>
+const API = 'http://localhost:8001/api/v1';
+let scoreChartInst = null;
+let radarChartInst = null;
+
+async function loadDashboard() {
+  const studentId = document.getElementById('studentInput').value.trim();
+  const taskType  = document.getElementById('taskTypeFilter').value;
+  const exam      = document.getElementById('examFilter').value;
+  if (!studentId) { alert('Please enter a student ID.'); return; }
+
+  const qs = new URLSearchParams();
+  if (taskType) qs.set('task_type', taskType);
+  if (exam)     qs.set('exam', exam);
+  const params = qs.toString() ? `?${qs}` : '';
+
+  try {
+    const [progressRes, weakRes, predRes] = await Promise.all([
+      fetch(`${API}/progress/${encodeURIComponent(studentId)}`),
+      fetch(`${API}/progress/${encodeURIComponent(studentId)}/weak-points${params}`),
+      fetch(`${API}/progress/${encodeURIComponent(studentId)}/prediction${params}`),
+    ]);
+
+    const progress   = await progressRes.json();
+    const weakData   = await weakRes.json();
+    const prediction = await predRes.json();
+
+    renderDashboard(progress, weakData, prediction, exam);
+  } catch (err) {
+    alert('Could not reach backend. Make sure FastAPI is running on port 8001.\n\n' + err);
+  }
+}
+
+function renderDashboard(progress, weakData, prediction, examFilter) {
+  document.getElementById('emptyState').classList.add('hidden');
+  document.getElementById('dashboard').classList.remove('hidden');
+
+  const attempts = progress.attempts || [];
+  // When an exam filter is active, scope display to those attempts
+  const filtered = examFilter ? attempts.filter(a => a.exam === examFilter) : attempts;
+
+  // Determine active exam for scale labelling
+  const activeExam = examFilter
+    || (weakData.exam)
+    || (filtered.length ? filtered[filtered.length - 1].exam : 'TOEFL');
+  const isTelcWriting = activeExam === 'TELC' &&
+    (document.getElementById('taskTypeFilter').value === 'writing' || !document.getElementById('taskTypeFilter').value);
+  const maxScore = (prediction.max_score) || (isTelcWriting ? 15 : 30);
+
+  // Cards
+  document.getElementById('cardTotal').textContent = filtered.length;
+
+  const scoredAttempts = filtered.filter(a => a.overall_score != null);
+  const latestScore = scoredAttempts.length ? scoredAttempts[scoredAttempts.length - 1].overall_score : null;
+  document.getElementById('cardLatest').textContent = latestScore != null ? latestScore : '—';
+  document.getElementById('cardLatestDenom').textContent = `/${maxScore}`;
+
+  const pred = prediction.predicted_score;
+  document.getElementById('cardPrediction').textContent = pred != null ? pred : '—';
+  document.getElementById('cardTrend').textContent = pred != null ? `/${maxScore}` : '';
+  const trendMap = { improving: '📈 Improving', declining: '📉 Declining', stable: '➡ Stable', insufficient_data: 'Not enough data', no_data: 'No data' };
+  const trendLabel = trendMap[prediction.trend] ?? prediction.trend ?? '';
+  if (trendLabel) document.getElementById('cardTrend').textContent += '  ' + trendLabel;
+
+  const predBox = document.getElementById('cardPredictionBox');
+  predBox.className = 'card';
+  if (prediction.trend === 'improving') predBox.classList.add('trend-improving');
+  else if (prediction.trend === 'declining') predBox.classList.add('trend-declining');
+  else predBox.classList.add('trend-stable');
+
+  document.getElementById('cardWeak').textContent =
+    (weakData.weak_points || []).length + (weakData.skill_warnings || []).length;
+
+  // Score over time chart
+  renderScoreChart(scoredAttempts, prediction, maxScore);
+
+  // Radar chart (latest attempt)
+  if (filtered.length > 0) {
+    renderRadarChart(filtered[filtered.length - 1]);
+  }
+
+  // Prediction banner
+  renderPredictionBanner(prediction);
+
+  // Weak points + skill warnings
+  renderWeakPoints(weakData);
+
+  // Attempts table
+  renderTable(filtered);
+}
+
+function renderScoreChart(attempts, prediction, maxScore) {
+  maxScore = maxScore || 30;
+  const labels = attempts.map((a, i) => `#${i + 1}`);
+  const scores = attempts.map(a => a.overall_score);
+
+  if (prediction.predicted_score != null && attempts.length >= 2) {
+    labels.push(`#${attempts.length + 1} (pred)`);
+    scores.push(null);
+  }
+
+  const predScores = attempts.map(() => null);
+  if (prediction.predicted_score != null && attempts.length >= 2) {
+    predScores[predScores.length - 1] = attempts[attempts.length - 1].overall_score;
+    predScores.push(prediction.predicted_score);
+  }
+
+  if (scoreChartInst) scoreChartInst.destroy();
+  scoreChartInst = new Chart(document.getElementById('scoreChart'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: `Score /${maxScore}`,
+          data: scores,
+          borderColor: '#2563eb',
+          backgroundColor: 'rgba(37,99,235,.1)',
+          tension: 0.3,
+          fill: true,
+          pointRadius: 5,
+          spanGaps: false,
+        },
+        {
+          label: 'Predicted',
+          data: predScores,
+          borderColor: '#f97316',
+          borderDash: [6, 3],
+          pointStyle: 'star',
+          pointRadius: 7,
+          backgroundColor: 'transparent',
+          spanGaps: true,
+        },
+      ],
+    },
+    options: {
+      plugins: { legend: { position: 'bottom' } },
+      scales: { y: { min: 0, max: maxScore, ticks: { stepSize: maxScore <= 15 ? 3 : 5 } } },
+    },
+  });
+}
+
+function renderRadarChart(attempt) {
+  let labels, data, maxVals;
+
+  if (attempt.task_type === 'speaking') {
+    labels  = ['Fluency\n(/10)', 'Pronunciation\n(/8)', 'Task Response\n(/7)', 'Language\n(/5)'];
+    data    = [attempt.fluency_score, attempt.pronunciation_score, attempt.content_score, attempt.speaking_language_score];
+    maxVals = [10, 8, 7, 5];
+  } else if (attempt.exam === 'TELC') {
+    labels  = ['Aufgaben-\nbewältigung\n(/5)', 'Kommunikative\nGestaltung\n(/5)', 'Formale\nRichtigkeit\n(/5)'];
+    data    = [attempt.aufgabenbewaltigung_score, attempt.kommunikative_gestaltung_score, attempt.formale_richtigkeit_score];
+    maxVals = [5, 5, 5];
+  } else {
+    labels  = ['Task Response\n(/5)', 'Organization\n(/5)', 'Language Use\n(/5)'];
+    data    = [attempt.task_response_score, attempt.organization_score, attempt.language_use_score];
+    maxVals = [5, 5, 5];
+  }
+
+  // Normalize to percentage for radar
+  const normalized = data.map((v, i) => v != null ? (v / maxVals[i]) * 100 : 0);
+
+  if (radarChartInst) radarChartInst.destroy();
+  radarChartInst = new Chart(document.getElementById('radarChart'), {
+    type: 'radar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Score %',
+        data: normalized,
+        backgroundColor: 'rgba(37,99,235,.15)',
+        borderColor: '#2563eb',
+        pointBackgroundColor: '#2563eb',
+      }],
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: { r: { min: 0, max: 100, ticks: { stepSize: 25, display: false } } },
+    },
+  });
+}
+
+function renderPredictionBanner(prediction) {
+  const banner = document.getElementById('predictionBanner');
+  const msg = prediction.prediction_message;
+  if (!msg) { banner.classList.add('hidden'); return; }
+  document.getElementById('predictionMessage').textContent = msg;
+  banner.className = 'prediction-banner' + (prediction.trend === 'declining' ? ' declining' : '');
+}
+
+function renderWeakPoints(weakData) {
+  const warnings   = weakData.skill_warnings || [];
+  const weakPoints = weakData.weak_points    || [];
+
+  // Skill-tag pattern warnings
+  const swEl = document.getElementById('skillWarningsList');
+  swEl.innerHTML = warnings.map(w => `
+    <div class="skill-warning">
+      <div class="sw-title">
+        ⚠️ Pattern detected: you consistently score below 50% on
+        &ldquo;${w.display_name}&rdquo; tasks
+        (${w.attempts} attempts &mdash; avg ${w.average_score}/30)
+      </div>
+      <div class="sw-advice">💡 ${w.advice}</div>
+    </div>
+  `).join('');
+
+  // Rubric-level weak bars
+  const el = document.getElementById('weakPointsList');
+  if (!weakPoints.length) {
+    el.innerHTML = warnings.length
+      ? ''
+      : '<p style="color:#64748b;font-size:.88rem">No weak areas detected — great work!</p>';
+    return;
+  }
+  el.innerHTML = weakPoints.map(wp => `
+    <div class="wp-item">
+      <div class="wp-label">${wp.category}</div>
+      <div class="wp-bar-wrap">
+        <div class="wp-bar ${wp.status}" style="width:${wp.percentage}%"></div>
+      </div>
+      <div class="wp-pct">${wp.percentage}%</div>
+      <span style="font-size:.75rem;color:${wp.status==='critical'?'#dc2626':'#ea580c'};font-weight:600">
+        ${wp.status === 'critical' ? '🔴 Critical' : '🟠 Needs work'}
+      </span>
+    </div>
+  `).join('');
+}
+
+function renderTable(attempts) {
+  const tbody = document.getElementById('attemptsBody');
+  if (!attempts.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#94a3b8;padding:20px">No attempts yet</td></tr>';
+    return;
+  }
+  tbody.innerHTML = [...attempts].reverse().map((a, i) => {
+    const date = a.created_at ? new Date(a.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—';
+    const prompt = a.task_prompt ? a.task_prompt.substring(0, 60) + (a.task_prompt.length > 60 ? '…' : '') : '—';
+    return `
+      <tr>
+        <td>${attempts.length - i}</td>
+        <td>${date}</td>
+        <td><span class="badge ${a.task_type}">${a.task_type}</span></td>
+        <td>${a.exam}</td>
+        <td>${a.overall_score != null ? a.overall_score + (a.exam === 'TELC' && a.task_type === 'writing' ? '/15' : '/30') : '—'}</td>
+        <td style="color:#64748b">${prompt}</td>
+      </tr>
+    `;
+  }).join('');
+}
+
+// Allow pressing Enter in the input
+document.getElementById('studentInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') loadDashboard();
+});
+</script>
+</body>
+</html>

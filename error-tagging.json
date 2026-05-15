@@ -1,0 +1,40 @@
+{
+  "error_taxonomy": {
+    "Syntactic Errors": [
+      {"tag": "Subject-Verb_Agreement", "description": "Özne-yüklem uyumsuzluğu"},
+      {"tag": "Tense_Consistency", "description": "Zaman kaymaları / tutarsız tense kullanımı"},
+      {"tag": "Article_Usage", "description": "a/an/the hataları"},
+      {"tag": "Preposition_Error", "description": "Edat hataları"},
+      {"tag": "Sentence_Fragment_RunOn", "description": "Cümle parçası veya birleşik cümle hatası"},
+      {"tag": "Passive_Active_Misuse", "description": "Edilgen/etken ses yanlış kullanımı"},
+      {"tag": "Conditional_Structure", "description": "Koşul cümleleri hataları"}
+    ],
+    "Lexical Errors": [
+      {"tag": "Wrong_Word_Choice", "description": "Yanlış kelime seçimi"},
+      {"tag": "Collocation_Error", "description": "Kelime birleşimi (collocation) hatası"},
+      {"tag": "Limited_Vocabulary_Range", "description": "Tekrar eden basit kelimeler / kelime çeşitliliği eksik"},
+      {"tag": "Word_Form_Error", "description": "Kelime formu hatası (adjective vs adverb vb.)"},
+      {"tag": "Register_Inappropriateness", "description": "Resmi/günlük dil karışıklığı (TOEFL akademik için kritik)"},
+      {"tag": "False_Friends", "description": "Yanlış arkadaş kelimeler (özellikle TELC Almanca)"}
+    ],
+    "Discourse_Cohesion_Errors": [
+      {"tag": "Missing_Linkers", "description": "Bağlaç / geçiş cümleleri eksik"},
+      {"tag": "Poor_Logical_Progression", "description": "Mantıksal sıçrama / kopukluk"},
+      {"tag": "Weak_Topic_Sentence", "description": "Zayıf paragraf giriş cümlesi"},
+      {"tag": "Inadequate_Conclusion", "description": "Zayıf veya eksik sonuç paragrafı"},
+      {"tag": "Repetition_of_Ideas", "description": "Fikir tekrarı"}
+    ],
+    "Task_Achievement_Content_Errors": [
+      {"tag": "Off_Topic_Partial_Response", "description": "Konudan sapma veya kısmi cevap"},
+      {"tag": "Missing_Key_Points", "description": "Önemli noktaları atlama (Integrated task için kritik)"},
+      {"tag": "Insufficient_Development", "description": "Örnek veya detay eksikliği"},
+      {"tag": "Irrelevant_Details", "description": "Alakasız detaylar"}
+    ],
+    "Speaking_Specific": [
+      {"tag": "Fillers_Pauses", "description": "Um, uh, uzun duraksamalar"},
+      {"tag": "Intonation_Stress", "description": "Vurgu ve tonlama sorunları"},
+      {"tag": "Pronunciation_Clarity", "description": "Telaffuz netliği eksikliği"},
+      {"tag": "Pacing_Speed", "description": "Konuşma hızı çok hızlı/yavaş"}
+    ]
+  }
+}

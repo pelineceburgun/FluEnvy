@@ -1,0 +1,1642 @@
+{
+  "golden_dataset":[
+  {
+    "id": "GOLD-T-W-IND-001",
+    "exam": "TOEFL",
+    "task_type": "Independent Writing",
+    "prompt": "Do you agree or disagree with the following statement? It is more important for students to study history and literature than science and mathematics. Use specific reasons and examples to support your opinion.",
+    "score_level": "5",
+    "rubric_reference": "ETS Independent Writing Rubric - Score 5",
+    "quality": "high",
+    "student_text": "I strongly agree that studying history and literature is more important for students than focusing solely on science and mathematics. While science and math provide practical skills for certain careers, history and literature foster critical thinking, empathy, and cultural understanding that are essential for well-rounded individuals in any field.\n\nFirst, history teaches us valuable lessons from the past that help us avoid repeating mistakes. For instance, studying World War II helps students understand the dangers of unchecked nationalism and discrimination. These insights are crucial for building a more tolerant society. Similarly, literature allows readers to experience different perspectives and emotions. Reading novels like 'To Kill a Mockingbird' develops empathy by letting students see the world through the eyes of characters from diverse backgrounds.\n\nMoreover, these subjects improve communication and analytical skills. Analyzing literary texts requires students to construct arguments and support them with evidence — skills that are transferable to any profession. In contrast, although science and math are important, an overemphasis on them may produce technically skilled but emotionally underdeveloped individuals.\n\nIn conclusion, while science and mathematics are undoubtedly valuable, history and literature play a more significant role in shaping thoughtful, empathetic, and culturally aware citizens. Therefore, schools should prioritize these subjects to create balanced education systems.",
+    "detailed_evaluation": {
+      "total_score": 30,
+      "criteria_scores": {
+        "Task_Response": 5,
+        "Organization": 5,
+        "Language_Use": 5
+      },
+      "strengths": [
+        "Prompt'a tam ve dengeli yanıt verilmiş, her iki taraf da ele alınmış",
+        "Güçlü topic sentences ve somut örnekler (WWII, To Kill a Mockingbird)",
+        "Mükemmel syntactic variety ve akademik kelime dağarcığı",
+        "Net introduction, body ve conclusion yapısı"
+      ],
+      "weaknesses": []
+    },
+    "error_tags": []
+  },
+  {
+    "id": "GOLD-T-W-IND-002",
+    "exam": "TOEFL",
+    "task_type": "Independent Writing",
+    "prompt": "Do you agree or disagree with the following statement? It is more important for students to study history and literature than science and mathematics. Use specific reasons and examples to support your opinion.",
+    "score_level": "3",
+    "rubric_reference": "ETS Independent Writing Rubric - Score 3",
+    "quality": "low",
+    "student_text": "I agree with this statement. History and literature is more important than science and math. Because history tell us about past and we can learn from it. Literature also good for reading books. Science and math is important too but not as much.\n\nIn history we study old things like wars and kings. This help us not make same mistake again. For example in school we learn about World War and it was bad. Literature like books make us happy and learn new words. I like reading stories.\n\nBut science help us make new things like phones and computers. Math is for calculate money. So both are important but I think history and literature better for students because it make us smart about life.\n\nIn the end, students should study more history and literature than science.",
+    "detailed_evaluation": {
+      "total_score": 18,
+      "criteria_scores": {
+        "Task_Response": 3,
+        "Organization": 3,
+        "Language_Use": 2
+      },
+      "strengths": [
+        "Temel fikir belirtilmiş (agree)",
+        "Birkaç basit örnek verilmiş"
+      ],
+      "weaknesses": [
+        "Gelişme çok yüzeysel, örnekler yetersiz ve genel",
+        "Organization zayıf (paragraflar arasında zayıf bağlantı)",
+        "Tekrar eden basit yapılar ve sınırlı kelime dağarcığı"
+      ]
+    },
+    "error_tags": [
+      {
+        "category": "Syntactic Errors",
+        "tag": "Subject-Verb_Agreement",
+        "location": "History and literature is",
+        "correction": "History and literature are",
+        "explanation": "Çoğul konu ('history and literature') ile fiil çoğul olmalı.",
+        "suggestion": "Özne-fiil uyumuna dikkat et.",
+        "improved_example": "History and literature are more important..."
+      },
+      {
+        "category": "Lexical Errors",
+        "tag": "Limited_Vocabulary_Range",
+        "location": "good, bad, smart, things",
+        "correction": "",
+        "explanation": "Çok basit ve tekrar eden kelimeler kullanılmış. Akademik seviye düşük.",
+        "suggestion": "Daha çeşitli kelimeler dene: beneficial, crucial, essential, foster vb.",
+        "improved_example": "Literature fosters empathy and cultural awareness."
+      },
+      {
+        "category": "Discourse_Cohesion_Errors",
+        "tag": "Missing_Linkers",
+        "location": "Tüm metin",
+        "correction": "",
+        "explanation": "Bağlaçlar neredeyse hiç yok (however, moreover, for example, therefore).",
+        "suggestion": "Cümleler arasında geçiş kelimeleri kullan.",
+        "improved_example": "Moreover, literature allows readers to..."
+      },
+      {
+        "category": "Task_Achievement_Content_Errors",
+        "tag": "Insufficient_Development",
+        "location": "Body paragraphs",
+        "correction": "",
+        "explanation": "Nedenler belirtilmiş ama somut ve detaylı örnekler eksik.",
+        "suggestion": "Her nedeni en az 2-3 cümle ile destekle ve spesifik örnek ver."
+      }
+    ]
+  },
+  {
+    "id": "GOLD-GER-W-B1-001",
+    "exam": "TELC",
+    "task_type": "B1 Informelle E-Mail",
+    "prompt": "Schreibe eine E-Mail an deinen Freund / deine Freundin. Gehe auf alle 4 Leitpunkte ein: ... (buraya tam görev metni ve 4 Leitpunkte yazılır)",
+    "score_level": "gut",
+    "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien - Aufgabenbewältigung, Kommunikative Gestaltung, Formale Richtigkeit",
+    "quality": "high",
+    "student_text": "Tam öğrenci metni burada... (yaklaşık 80-150 kelime arası, B1 seviyesinde)",
+    "detailed_evaluation": {
+      "total_score": 45,
+      "criteria_scores": {
+        "Aufgabenbewältigung": 5,
+        "Kommunikative Gestaltung": 5,
+        "Formale Richtigkeit": 5
+      },
+      "strengths": [
+        "Tüm 4 Leitpunkte detaylı ve mantıklı şekilde cevaplanmış",
+        "Doğal bağlaç kullanımı (weil, deshalb, außerdem, trotzdem)",
+        "B1 seviyesine uygun kelime çeşitliliği ve cümle yapısı",
+        "Uygun selamlama, giriş ve kapanış"
+      ],
+      "weaknesses": []
+    },
+    "error_tags": [
+      {
+        "category": "Syntactic Errors",
+        "tag": "Article_Usage",
+        "location": "cümle 5: das Wetter war super",
+        "correction": "das Wetter war super",
+        "explanation": "Almanca'da 'Wetter' nötr (das) olduğu için doğru artikel kullanılmış.",
+        "suggestion": "B1'de artikel hatalarını minimuma indir.",
+        "improved_example": "Das Wetter in Antalya war super."
+      }
+    ]
+  },
+  {
+    "id": "GOLD-GER-W-B1-002",
+    "exam": "TELC",
+    "task_type": "B1 Informelle E-Mail",
+    "prompt": "Schreibe eine E-Mail an deinen Freund über deine letzten Ferien in der Türkei. Gehe auf alle 4 Leitpunkte ein.",
+    "score_level": "ausreichend",
+    "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+    "quality": "low",
+    "student_text": "Hallo Anna, ich war in Antalya. Das Wetter war gut. Ich habe geschwommen. Das Essen war lecker. Tschüss.",
+    "detailed_evaluation": {
+      "total_score": 25,
+      "criteria_scores": {
+        "Aufgabenbewältigung": 3,
+        "Kommunikative Gestaltung": 2,
+        "Formale Richtigkeit": 3
+      },
+      "strengths": [
+        "Temel selamlama var"
+      ],
+      "weaknesses": [
+        "Sadece 3 Leitpunkt kısaca değinilmiş, detay yok",
+        "Cümleler çok kısa ve kopuk",
+        "Bağlaç neredeyse hiç kullanılmamış"
+      ]
+    },
+    "error_tags": [
+      {
+        "category": "Task_Achievement_Content_Errors",
+        "tag": "Missing_Key_Points",
+        "location": "Tüm metin",
+        "feedback": "4 Leitpunktten en az biri eksik veya çok yüzeysel işlenmiş.",
+        "suggestion": "Her Leitpunkt için en az 2-3 cümle yaz."
+      },
+      {
+        "category": "Discourse_Cohesion_Errors",
+        "tag": "Missing_Linkers",
+        "suggestion": "weil, deshalb, außerdem, dann gibi bağlaçlar ekle."
+      },
+      {
+        "category": "Lexical Errors",
+        "tag": "Limited_Vocabulary_Range",
+        "feedback": "'gut', 'lecker' gibi çok basit kelimeler tekrar edilmiş."
+      }
+    ]
+  },
+  {
+    "golden_dataset": [
+      {
+        "id": "GOLD-T-W-IND-001",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree with the following statement? It is more important for students to study history and literature than science and mathematics. Use specific reasons and examples to support your opinion.",
+        "score_level": "5",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 5",
+        "quality": "high",
+        "student_text": "I strongly agree that studying history and literature is more important for students than focusing solely on science and mathematics. While science and math provide practical skills, history and literature cultivate critical thinking, empathy, and cultural awareness—qualities that are essential for responsible global citizens.\n\nFirst, history offers valuable lessons from the past that help societies avoid repeating mistakes. For instance, studying the rise and fall of empires teaches students about the dangers of unchecked power. Similarly, literature develops empathy by allowing readers to experience life from diverse perspectives. Reading 'To Kill a Mockingbird' helps students understand racial injustice more deeply than any textbook.\n\nFurthermore, these subjects improve analytical and communication skills that apply to every profession. In contrast, an exclusive emphasis on science and mathematics may produce technically skilled but emotionally underdeveloped individuals.\n\nIn conclusion, although science and mathematics are important, history and literature play a more fundamental role in shaping thoughtful and empathetic individuals. Therefore, schools should prioritize these subjects.",
+        "detailed_evaluation": {
+          "total_score": 30,
+          "criteria_scores": {
+            "Task_Response": 5,
+            "Organization": 5,
+            "Language_Use": 5
+          },
+          "strengths": [
+            "Tam task response",
+            "Güçlü ve somut örnekler",
+            "Advanced syntactic variety",
+            "Mükemmel organizasyon"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-T-W-IND-002",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree with the following statement? It is more important for students to study history and literature than science and mathematics. Use specific reasons and examples to support your opinion.",
+        "score_level": "3",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 3",
+        "quality": "low",
+        "student_text": "I agree with the statement. History and literature is more important than science and math. Because history tell us about past and we learn from mistakes. Literature is also good for reading books.\n\nIn history we study wars and kings. This help us not make same mistake. Literature make us happy. Science and math is important for phones and money but I think history better.\n\nIn the end students should study more history and literature.",
+        "detailed_evaluation": {
+          "total_score": 18,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 3,
+            "Language_Use": 2
+          },
+          "strengths": [
+            "Temel görüş belirtilmiş"
+          ],
+          "weaknesses": [
+            "Yüzeysel gelişme",
+            "Zayıf organizasyon"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Subject-Verb_Agreement",
+            "location": "History and literature is",
+            "correction": "are",
+            "explanation": "Çoğul özneyle fiil çoğul olmalı.",
+            "suggestion": "Özne-fiil uyumuna dikkat et.",
+            "improved_example": "History and literature are more important."
+          },
+          {
+            "category": "Lexical Errors",
+            "tag": "Limited_Vocabulary_Range",
+            "location": "good, important, better",
+            "correction": "",
+            "explanation": "Tekrar eden basit kelimeler.",
+            "suggestion": "Çeşitli akademik kelimeler kullan.",
+            "improved_example": "Literature fosters empathy."
+          },
+          {
+            "category": "Discourse_Cohesion_Errors",
+            "tag": "Missing_Linkers",
+            "location": "Tüm metin",
+            "correction": "",
+            "explanation": "Bağlaç eksik.",
+            "suggestion": "however, moreover, for example ekle."
+          }
+        ]
+      },
+      {
+        "id": "GOLD-T-W-IND-003",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Some people prefer to spend their free time alone. Others prefer to spend it with friends. Which do you prefer? Use specific reasons and examples to support your answer.",
+        "score_level": "5",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 5",
+        "quality": "high",
+        "student_text": "I prefer spending my free time with friends rather than alone. Although solitude can be relaxing, social interaction provides emotional support, motivation, and memorable experiences that significantly enrich life.\n\nFirst, friends offer different perspectives that help us solve problems more creatively. For example, when I was struggling with a university project, my friends’ suggestions led to a much better outcome. Moreover, shared activities create lasting memories. Whether traveling together or simply having dinner, these moments strengthen relationships and reduce stress.\n\nAdditionally, spending time with others improves mental health. Studies show that strong social connections decrease the risk of depression. In contrast, too much alone time can lead to feelings of isolation.\n\nIn conclusion, while being alone has its benefits, I believe spending free time with friends is more rewarding because it fosters personal growth and happiness.",
+        "detailed_evaluation": {
+          "total_score": 29,
+          "criteria_scores": {
+            "Task_Response": 5,
+            "Organization": 5,
+            "Language_Use": 4.5
+          },
+          "strengths": [
+            "Net tercih belirtilmiş",
+            "Somut örnekler",
+            "İyi akış"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-T-W-IND-004",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Some people prefer to spend their free time alone. Others prefer to spend it with friends. Which do you prefer? Use specific reasons and examples to support your answer.",
+        "score_level": "3",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 3",
+        "quality": "low",
+        "student_text": "I prefer with friends. Because alone is boring. With friends we can talk and have fun. I like playing games with them.\n\nWhen I am alone I just watch TV. But with friends we go out. This is better. Friends help me when I sad.\n\nIn conclusion I like friends more than alone.",
+        "detailed_evaluation": {
+          "total_score": 17,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 2,
+            "Language_Use": 2
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Çok kısa ve basit",
+            "Örnekler yetersiz"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Sentence_Fragment",
+            "location": "I prefer with friends",
+            "correction": "I prefer spending time with friends",
+            "explanation": "Cümle eksik.",
+            "suggestion": "Tam cümle kur."
+          },
+          {
+            "category": "Lexical Errors",
+            "tag": "Limited_Vocabulary_Range",
+            "location": "boring, fun, sad",
+            "correction": "",
+            "explanation": "Kelime dağarcığı çok sınırlı."
+          }
+        ]
+      },
+      {
+        "id": "GOLD-GER-W-B1-001",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Dein Freund hat dir eine E-Mail geschrieben und gefragt, wie deine letzten Ferien in der Türkei waren. Schreibe eine Antwort-E-Mail. Gehe auf folgende Punkte ein: 1. Wo warst du und wie war das Wetter? 2. Was hast du gemacht? 3. Wie hat dir das Essen geschmeckt? 4. Würdest du wieder hinfahren und warum?",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Hallo Anna,\n\nletzte Woche war ich mit meiner Familie in Antalya. Das Wetter war fantastisch, fast jeden Tag sonnig und über 30 Grad. Wir haben viel Zeit am Strand verbracht und ich bin jeden Morgen geschwommen.\n\nAußerdem haben wir die Altstadt besichtigt und einen Bootsausflug gemacht. Das türkische Essen hat mir sehr gut geschmeckt, besonders das Kebab und die frischen Meeresfrüchte. Nur das Baklava war mir etwas zu süß.\n\nIch würde auf jeden Fall wieder nach Antalya fahren, weil die Menschen sehr freundlich waren und die Preise günstig sind. Nächstes Jahr möchte ich sogar zwei Wochen bleiben.\n\nLiebe Grüße\nEce",
+        "detailed_evaluation": {
+          "total_score": 43,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 5,
+            "Formale Richtigkeit": 4.5
+          },
+          "strengths": [
+            "Tüm Leitpunkte detaylı cevaplanmış",
+            "Doğal bağlaç kullanımı",
+            "B1 seviyesine uygun akıcı dil"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-GER-W-B1-002",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Dein Freund hat dir eine E-Mail geschrieben und gefragt, wie deine letzten Ferien in der Türkei waren. Schreibe eine Antwort-E-Mail. Gehe auf folgende Punkte ein: 1. Wo warst du und wie war das Wetter? 2. Was hast du gemacht? 3. Wie hat dir das Essen geschmeckt? 4. Würdest du wieder hinfahren und warum?",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Hallo Anna,\n\nIch war in Antalya. Das Wetter war gut. Ich habe geschwommen. Das Essen war lecker. Ich mochte Kebab.\n\nDie Menschen waren nett. Ich würde wieder hinfahren.\n\nTschüss\nEce",
+        "detailed_evaluation": {
+          "total_score": 25,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 3,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [
+            "Selamlama var"
+          ],
+          "weaknesses": [
+            "Leitpunkte çok kısa",
+            "Bağlaç eksik",
+            "Zayıf yapı"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Insufficient_Development",
+            "location": "Tüm metin",
+            "correction": "",
+            "explanation": "Leitpunkte yüzeysel işlenmiş.",
+            "suggestion": "Her nokta için daha fazla detay ver."
+          },
+          {
+            "category": "Discourse_Cohesion_Errors",
+            "tag": "Missing_Linkers",
+            "location": "Tüm metin",
+            "correction": "",
+            "explanation": "Bağlaç neredeyse hiç yok."
+          }
+        ]
+      },
+      {
+        "id": "GOLD-GER-W-B1-003",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Sie haben ein Smartphone online bestellt, aber es funktioniert nicht richtig. Schreiben Sie eine Beschwerde-E-Mail an den Verkäufer. Gehen Sie auf folgende Punkte ein: 1. Wann und wo haben Sie das Handy bestellt? 2. Was ist das Problem? 3. Was haben Sie schon versucht? 4. Was erwarten Sie jetzt?",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Sehr geehrte Damen und Herren,\n\nvor zwei Wochen habe ich bei Ihnen ein Smartphone (Modell XYZ) bestellt. Leider funktioniert das Gerät nicht richtig. Der Akku hält nur wenige Stunden und der Bildschirm friert manchmal ein.\n\nIch habe bereits versucht, das Handy neu zu starten und die Software zu aktualisieren, aber das Problem bleibt bestehen. Deshalb möchte ich das Gerät umtauschen oder mein Geld zurückbekommen.\n\nIch wäre Ihnen dankbar, wenn Sie mir schnellstmöglich antworten und eine Lösung anbieten würden.\n\nMit freundlichen Grüßen\nEce Yılmaz",
+        "detailed_evaluation": {
+          "total_score": 42,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 5,
+            "Formale Richtigkeit": 4
+          },
+          "strengths": [
+            "Resmi dil ve yapı doğru",
+            "Tüm noktalar detaylı",
+            "Mantıklı akış"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-GER-W-B1-004",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Sie haben ein Smartphone online bestellt, aber es funktioniert nicht richtig. Schreiben Sie eine Beschwerde-E-Mail an den Verkäufer. Gehen Sie auf folgende Punkte ein: 1. Wann und wo haben Sie das Handy bestellt? 2. Was ist das Problem? 3. Was haben Sie schon versucht? 4. Was erwarten Sie jetzt?",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Sehr geehrte Damen,\n\nIch habe ein Handy bei Ihnen gekauft. Es ist kaputt. Der Akku geht schnell leer. Ich habe es ausgeschaltet aber es hilft nicht.\n\nBitte geben Sie mir mein Geld zurück.\n\nViele Grüße\nEce",
+        "detailed_evaluation": {
+          "total_score": 24,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 2,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [
+            "Temel şikayet var"
+          ],
+          "weaknesses": [
+            "Detay eksik",
+            "Resmi yapı zayıf",
+            "Çok kısa"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Missing_Key_Points",
+            "location": "Tüm metin",
+            "correction": "",
+            "explanation": "Birçok Leitpunkt eksik veya çok kısa.",
+            "suggestion": "Tüm 4 noktayı detaylı yaz."
+          },
+          {
+            "category": "Lexical Errors",
+            "tag": "Register_Inappropriateness",
+            "location": "Ich habe ein Handy bei Ihnen gekauft",
+            "correction": "Ich habe bei Ihnen ein Smartphone bestellt.",
+            "explanation": "Şikayet mektubunda daha resmi dil beklenir."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "golden_dataset": [
+      {
+        "id": "GOLD-T-W-IND-001",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree with the following statement? It is more important for students to study history and literature than science and mathematics. Use specific reasons and examples to support your opinion.",
+        "score_level": "5",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 5",
+        "quality": "high",
+        "student_text": "I strongly agree that studying history and literature is more important for students than focusing solely on science and mathematics. While science and math provide practical skills, history and literature cultivate critical thinking, empathy, and cultural awareness—qualities essential for responsible global citizens.\n\nFirst, history offers valuable lessons from the past. For instance, studying World War II helps students understand the dangers of unchecked nationalism. Similarly, literature develops empathy by allowing readers to experience diverse perspectives, as seen in 'To Kill a Mockingbird'.\n\nFurthermore, these subjects enhance analytical and communication skills applicable to any profession. In conclusion, although science and mathematics are important, history and literature play a more fundamental role in shaping well-rounded individuals.",
+        "detailed_evaluation": {
+          "total_score": 30,
+          "criteria_scores": {
+            "Task_Response": 5,
+            "Organization": 5,
+            "Language_Use": 5
+          },
+          "strengths": [
+            "Tam ve dengeli yanıt",
+            "Somut örnekler",
+            "Advanced syntactic variety"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-T-W-IND-002",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree with the following statement? It is more important for students to study history and literature than science and mathematics. Use specific reasons and examples to support your opinion.",
+        "score_level": "3",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 3",
+        "quality": "low",
+        "student_text": "I agree with this statement. History and literature is more important than science and math. Because history tell us about past and we can learn from it. Literature is also good.\n\nIn history we study wars. This help us not make same mistake. Science is important for phones but history better.\n\nIn the end students should study more history.",
+        "detailed_evaluation": {
+          "total_score": 18,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 3,
+            "Language_Use": 2
+          },
+          "strengths": [
+            "Temel görüş var"
+          ],
+          "weaknesses": [
+            "Yüzeysel gelişme",
+            "Zayıf organizasyon"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Subject-Verb_Agreement",
+            "location": "History and literature is",
+            "correction": "are",
+            "explanation": "Çoğul öznede fiil çoğul olur.",
+            "suggestion": "Özne-fiil uyumuna dikkat et.",
+            "improved_example": "History and literature are more important."
+          },
+          {
+            "category": "Lexical Errors",
+            "tag": "Limited_Vocabulary_Range",
+            "location": "good, important, better",
+            "correction": "",
+            "explanation": "Tekrar eden basit kelimeler.",
+            "suggestion": "Çeşitlilik artır."
+          }
+        ]
+      },
+      {
+        "id": "GOLD-T-W-IND-003",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Some people prefer to spend their free time alone. Others prefer to spend it with friends. Which do you prefer? Use specific reasons and examples to support your answer.",
+        "score_level": "5",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 5",
+        "quality": "high",
+        "student_text": "I prefer spending my free time with friends. Although solitude can be relaxing, social interaction provides emotional support, motivation, and memorable experiences that enrich life.\n\nFirst, friends offer different perspectives that help solve problems creatively. Moreover, shared activities create lasting memories and reduce stress. Studies also show that strong social connections improve mental health.\n\nIn conclusion, while being alone has benefits, spending time with friends is more rewarding for personal growth and happiness.",
+        "detailed_evaluation": {
+          "total_score": 29,
+          "criteria_scores": {
+            "Task_Response": 5,
+            "Organization": 5,
+            "Language_Use": 4.5
+          },
+          "strengths": [
+            "Net tercih ve güçlü örnekler",
+            "İyi akış"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-T-W-IND-004",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Some people prefer to spend their free time alone. Others prefer to spend it with friends. Which do you prefer? Use specific reasons and examples to support your answer.",
+        "score_level": "3",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 3",
+        "quality": "low",
+        "student_text": "I prefer with friends. Alone is boring. With friends we talk and play games.\n\nWhen alone I watch TV. With friends we go out. This is better.\n\nI like friends more.",
+        "detailed_evaluation": {
+          "total_score": 16,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 2,
+            "Language_Use": 2
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Çok kısa ve basit"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Sentence_Fragment",
+            "location": "I prefer with friends",
+            "correction": "I prefer spending time with friends.",
+            "explanation": "Cümle eksik.",
+            "suggestion": "Tam cümle yaz."
+          }
+        ]
+      },
+      {
+        "id": "GOLD-T-W-IND-005",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree? Technology has made our lives more complicated than before. Use specific reasons and examples.",
+        "score_level": "5",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 5",
+        "quality": "high",
+        "student_text": "I disagree with the statement. Although technology brings challenges, it has simplified many aspects of daily life and increased efficiency.\n\nFirst, communication is faster and cheaper thanks to smartphones and the internet. Second, tasks that once took hours can now be completed in minutes with automation. Finally, access to information and education has improved dramatically.\n\nIn conclusion, the benefits of technology far outweigh its drawbacks.",
+        "detailed_evaluation": {
+          "total_score": 30,
+          "criteria_scores": {
+            "Task_Response": 5,
+            "Organization": 5,
+            "Language_Use": 5
+          },
+          "strengths": [
+            "Dengeli argüman",
+            "Akademik dil"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-T-W-IND-006",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree? Technology has made our lives more complicated than before. Use specific reasons and examples.",
+        "score_level": "3",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 3",
+        "quality": "low",
+        "student_text": "I think technology make life complicated. Because we spend too much time on phone. People don't talk face to face anymore.\n\nTechnology is good for some things but bad for others. I think it is more complicated now.",
+        "detailed_evaluation": {
+          "total_score": 19,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 3,
+            "Language_Use": 2
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Zayıf gelişme",
+            "Tekrar"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Tense_Consistency",
+            "location": "technology make",
+            "correction": "makes",
+            "explanation": "Genel gerçek için present simple kullanılır."
+          }
+        ]
+      },
+      {
+        "id": "GOLD-T-W-IND-007",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Some people believe that the best way to increase happiness is to spend money on experiences rather than possessions. Others disagree. Which do you prefer?",
+        "score_level": "5",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 5",
+        "quality": "high",
+        "student_text": "I believe spending money on experiences brings more lasting happiness than buying possessions. Experiences create memories and strengthen relationships.\n\nFirst, experiences foster personal growth and new skills. Traveling, for example, broadens perspectives. Second, material items lose value quickly while memories last a lifetime.\n\nIn conclusion, experiences provide deeper satisfaction.",
+        "detailed_evaluation": {
+          "total_score": 28,
+          "criteria_scores": {
+            "Task_Response": 5,
+            "Organization": 5,
+            "Language_Use": 4.5
+          },
+          "strengths": [
+            "Güçlü argümanlar"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-T-W-IND-008",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Some people believe that the best way to increase happiness is to spend money on experiences rather than possessions. Others disagree. Which do you prefer?",
+        "score_level": "3",
+        "rubric_reference": "ETS Independent Writing Rubric - Score 3",
+        "quality": "low",
+        "student_text": "I think experiences is better. When you buy things you get happy but then you forget. But travel with friends is fun.\n\nThings break but memories stay. So experiences better.",
+        "detailed_evaluation": {
+          "total_score": 17,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 2,
+            "Language_Use": 2
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Kısa ve basit"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Subject-Verb_Agreement",
+            "location": "experiences is",
+            "correction": "are"
+          }
+        ]
+      },
+      {
+        "id": "GOLD-GER-W-B1-001",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Dein Freund hat dir eine E-Mail geschrieben und gefragt, wie deine letzten Ferien in der Türkei waren. Schreibe eine Antwort-E-Mail. Gehe auf folgende Punkte ein: 1. Wo warst du und wie war das Wetter? 2. Was hast du gemacht? 3. Wie hat dir das Essen geschmeckt? 4. Würdest du wieder hinfahren und warum?",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Hallo Anna,\n\nletzte Woche war ich mit meiner Familie in Antalya. Das Wetter war fantastisch, jeden Tag sonnig und warm. Wir haben viel am Strand gelegen, geschwommen und die Altstadt besichtigt.\n\nDas türkische Essen hat mir sehr gut geschmeckt, besonders Kebab und frisches Obst. Ich würde auf jeden Fall wieder hinfahren, weil die Menschen sehr freundlich waren und die Preise günstig sind.\n\nLiebe Grüße\nEce",
+        "detailed_evaluation": {
+          "total_score": 43,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 5,
+            "Formale Richtigkeit": 4.5
+          },
+          "strengths": [
+            "Tüm Leitpunkte detaylı",
+            "Doğal akış"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-GER-W-B1-002",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Dein Freund hat dir eine E-Mail geschrieben und gefragt, wie deine letzten Ferien in der Türkei waren. Schreibe eine Antwort-E-Mail. Gehe auf folgende Punkte ein: 1. Wo warst du und wie war das Wetter? 2. Was hast du gemacht? 3. Wie hat dir das Essen geschmeckt? 4. Würdest du wieder hinfahren und warum?",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Hallo Anna,\n\nIch war in Antalya. Das Wetter war gut. Ich habe geschwommen. Das Essen war lecker. Ich würde wieder hinfahren.\n\nTschüss\nEce",
+        "detailed_evaluation": {
+          "total_score": 25,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 3,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Leitpunkte çok kısa"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Insufficient_Development",
+            "location": "Tüm metin",
+            "suggestion": "Her Leitpunkt için daha fazla cümle yaz."
+          }
+        ]
+      },
+      {
+        "id": "GOLD-GER-W-B1-003",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Sie haben ein Smartphone online bestellt, aber es funktioniert nicht richtig. Schreiben Sie eine Beschwerde-E-Mail. Gehen Sie auf folgende Punkte ein: 1. Wann und wo haben Sie das Handy bestellt? 2. Was ist das Problem? 3. Was haben Sie schon versucht? 4. Was erwarten Sie jetzt?",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Sehr geehrte Damen und Herren,\n\nvor zwei Wochen habe ich bei Ihnen ein Smartphone bestellt. Leider funktioniert es nicht richtig: Der Akku hält nur wenige Stunden und der Bildschirm friert ein.\n\nIch habe es neu gestartet und die Software aktualisiert, aber das Problem bleibt. Deshalb möchte ich das Gerät umtauschen oder mein Geld zurückbekommen.\n\nMit freundlichen Grüßen\nEce Yılmaz",
+        "detailed_evaluation": {
+          "total_score": 42,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 5,
+            "Formale Richtigkeit": 4
+          },
+          "strengths": [
+            "Resmi yapı doğru",
+            "Tüm noktalar kapsanmış"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-GER-W-B1-004",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Sie haben ein Smartphone online bestellt, aber es funktioniert nicht richtig. Schreiben Sie eine Beschwerde-E-Mail. Gehen Sie auf folgende Punkte ein: 1. Wann und wo haben Sie das Handy bestellt? 2. Was ist das Problem? 3. Was haben Sie schon versucht? 4. Was erwarten Sie jetzt?",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Sehr geehrte Damen,\n\nIch habe ein Handy gekauft. Es ist kaputt. Bitte Geld zurück.\n\nViele Grüße\nEce",
+        "detailed_evaluation": {
+          "total_score": 23,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 2,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Detay eksik",
+            "Resmi dil yetersiz"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Missing_Key_Points",
+            "location": "Tüm metin",
+            "suggestion": "Tüm 4 Leitpunkteyi detaylı yaz."
+          }
+        ]
+      },
+      {
+        "id": "GOLD-GER-W-B1-005",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Deine Freundin hat dich eingeladen, sie in den Ferien zu besuchen. Schreibe eine Antwort-E-Mail. Gehe auf folgende Punkte ein: 1. Ob du kommen kannst. 2. Wann du kommen möchtest. 3. Was du mitbringen möchtest. 4. Was du in den Ferien machen möchtest.",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Hallo Lisa,\n\nvielen Dank für deine Einladung! Ich komme sehr gerne vom 15. bis 25. Juli. Ich bringe meinen Laptop und ein paar türkische Spezialitäten mit.\n\nWir können zusammen wandern, schwimmen und die Stadt erkunden. Ich freue mich schon sehr!\n\nLiebe Grüße\nEce",
+        "detailed_evaluation": {
+          "total_score": 44,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 5,
+            "Formale Richtigkeit": 5
+          },
+          "strengths": [
+            "Tüm Leitpunkte kapsanmış",
+            "Doğal ve akıcı"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-GER-W-B1-006",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Deine Freundin hat dich eingeladen, sie in den Ferien zu besuchen. Schreibe eine Antwort-E-Mail. Gehe auf folgende Punkte ein: 1. Ob du kommen kannst. 2. Wann du kommen möchtest. 3. Was du mitbringen möchtest. 4. Was du in den Ferien machen möchtest.",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Hallo Lisa,\n\nIch komme gerne. Im Juli. Ich bringe Essen mit. Wir können schwimmen.\n\nTschüss\nEce",
+        "detailed_evaluation": {
+          "total_score": 24,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 3,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Çok kısa ve eksik detay"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Insufficient_Development",
+            "location": "Tüm metin",
+            "suggestion": "Her noktayı genişlet."
+          }
+        ]
+      },
+      {
+        "id": "GOLD-GER-W-B1-007",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Du hast ein Paar Schuhe online gekauft, aber sie sind zu klein. Schreibe eine Beschwerde-E-Mail an den Shop.",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Sehr geehrte Damen und Herren,\n\nam 20. März habe ich bei Ihnen ein Paar Schuhe (Größe 39) bestellt. Leider sind sie zu klein und ich kann sie nicht tragen.\n\nIch habe die Rückgabebedingungen gelesen und möchte sie umtauschen oder mein Geld zurückbekommen.\n\nVielen Dank im Voraus.\n\nMit freundlichen Grüßen\nEce Yılmaz",
+        "detailed_evaluation": {
+          "total_score": 41,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 4.5,
+            "Formale Richtigkeit": 4.5
+          },
+          "strengths": [
+            "Resmi ve net"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "GOLD-GER-W-B1-008",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Du hast ein Paar Schuhe online gekauft, aber sie sind zu klein. Schreibe eine Beschwerde-E-Mail an den Shop.",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Hallo,\n\nIch habe Schuhe gekauft. Sie sind zu klein. Bitte Geld zurück.\n\nEce",
+        "detailed_evaluation": {
+          "total_score": 22,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 2,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Resmi dil eksik",
+            "Detay yok"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Lexical Errors",
+            "tag": "Register_Inappropriateness",
+            "location": "Hallo",
+            "correction": "Sehr geehrte Damen und Herren",
+            "explanation": "Beschwerdebrief için resmi selamlama gerekir."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "golden_dataset": [
+      {
+        "id": "ETS-T-W-IND-001",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree with the following statement? The traditional virtue of telling the truth in all situations is increasingly doubted by many in today’s world.",
+        "score_level": "5",
+        "rubric_reference": "ETS Official Independent Writing Rubric - Score 5",
+        "quality": "high",
+        "student_text": "The traditional virtue of telling the truth in all situations is increasingly doubted by many in today’s world. Moreover, the lying is considered as a good thing in some situations. For example, in business world, people sometimes need to tell white lies to keep good relationships with their partners. However, I believe that honesty is still the most important virtue in human relationships.",
+        "detailed_evaluation": {
+          "total_score": 5,
+          "criteria_scores": {
+            "Task_Response": 5,
+            "Organization": 5,
+            "Language_Use": 5
+          },
+          "strengths": [
+            "Net thesis",
+            "İyi gelişme",
+            "Akademik dil ve variety"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "ETS-T-W-IND-002",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree with the following statement? The traditional virtue of telling the truth in all situations is increasingly doubted by many in today’s world.",
+        "score_level": "3",
+        "rubric_reference": "ETS Official Independent Writing Rubric - Score 3",
+        "quality": "low",
+        "student_text": "Telling the truth is the most important consideration in any relationship between people once you are going to deal with this person because you first of all must trust in this person, second nobody likes to be treated as a fool, and the truth makes a solid relation perdure.",
+        "detailed_evaluation": {
+          "total_score": 3,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 3,
+            "Language_Use": 3
+          },
+          "strengths": [
+            "Temel fikir var"
+          ],
+          "weaknesses": [
+            "Zayıf organizasyon",
+            "Tekrar ve basit yapı"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Discourse_Cohesion_Errors",
+            "tag": "Poor_Logical_Progression",
+            "location": "Tüm metin",
+            "correction": "",
+            "explanation": "Fikirler liste gibi sıralanmış, akış zayıf.",
+            "suggestion": "Bağlaçlarla paragraf yapılandır."
+          }
+        ]
+      },
+      {
+        "id": "ETS-T-W-INT-001",
+        "exam": "TOEFL",
+        "task_type": "Integrated Writing",
+        "prompt": "Summarize the points made in the lecture and explain how they cast doubt on the points made in the reading passage. (Topic: Computerized voting systems)",
+        "score_level": "5",
+        "rubric_reference": "ETS Integrated Writing Rubric - Score 5",
+        "quality": "high",
+        "student_text": "The lecture explained why the computerized voting system cannot replace the traditional voting system. First, the lecture mentioned that not everyone is familiar with computers, especially older people. Second, the lecture pointed out that computers can make serious errors that affect thousands of votes at once. Finally, the lecture argued that we do not use computerized voting often enough to find and fix all the bugs.",
+        "detailed_evaluation": {
+          "total_score": 5,
+          "criteria_scores": {
+            "Content_Accuracy": 5,
+            "Organization": 5,
+            "Language_Use": 5
+          },
+          "strengths": [
+            "Tüm 3 noktayı doğru eşleştirmiş",
+            "Net özet"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "ETS-T-W-INT-002",
+        "exam": "TOEFL",
+        "task_type": "Integrated Writing",
+        "prompt": "Summarize the points made in the lecture and explain how they cast doubt on the points made in the reading passage. (Topic: Computerized voting systems)",
+        "score_level": "3",
+        "rubric_reference": "ETS Integrated Writing Rubric - Score 3",
+        "quality": "low",
+        "student_text": "The lecture disagreed with the article. It's not a better solution to use computerized voting. It might be hard for old people. Computer can have errors too.",
+        "detailed_evaluation": {
+          "total_score": 3,
+          "criteria_scores": {
+            "Content_Accuracy": 3,
+            "Organization": 2,
+            "Language_Use": 3
+          },
+          "strengths": [
+            "Temel karşıt görüş belirtilmiş"
+          ],
+          "weaknesses": [
+            "Noktalar eksik ve yüzeysel",
+            "Zayıf bağlantı reading-lecture"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Missing_Key_Points",
+            "location": "Tüm metin",
+            "correction": "",
+            "explanation": "Lecture'daki 3 ana noktadan sadece 2'si kısmen belirtilmiş.",
+            "suggestion": "Her noktayı ayrı paragrafta açıkla."
+          }
+        ]
+      },
+      {
+        "id": "ETS-T-W-ACD-001",
+        "exam": "TOEFL",
+        "task_type": "Academic Discussion",
+        "prompt": "In the past 200 years, tons of scientific discoveries or technological inventions have been shown to the world...",
+        "score_level": "5",
+        "rubric_reference": "ETS Academic Discussion Rubric - Score 5",
+        "quality": "high",
+        "student_text": "I believe the most important invention in the last 200 years is the internet. It has revolutionized communication, education, and business in ways no other invention has.",
+        "detailed_evaluation": {
+          "total_score": 5,
+          "criteria_scores": {
+            "Task_Response": 5,
+            "Language_Use": 5
+          },
+          "strengths": [
+            "Net katkı + nedenler"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "ETS-T-W-ACD-002",
+        "exam": "TOEFL",
+        "task_type": "Academic Discussion",
+        "prompt": "In the past 200 years, tons of scientific discoveries or technological inventions have been shown to the world...",
+        "score_level": "4",
+        "rubric_reference": "ETS Academic Discussion Rubric - Score 4",
+        "quality": "mid",
+        "student_text": "From my personal point of view, I think the most important invention is the light bulb. It changed everything.",
+        "detailed_evaluation": {
+          "total_score": 4,
+          "criteria_scores": {
+            "Task_Response": 4,
+            "Language_Use": 4
+          },
+          "strengths": [
+            "Görüş belirtilmiş"
+          ],
+          "weaknesses": [
+            "Gelişme çok kısa"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Insufficient_Development",
+            "location": "Tüm metin",
+            "suggestion": "Daha fazla neden ve örnek ekle."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "golden_dataset": [
+      {
+        "id": "REDDIT-T-W-IND-001",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "There are a lot of debates on whether it's an important part of child's education to take them on field trips or not.",
+        "score_level": "3",
+        "rubric_reference": "Real student from r/ToeflAdvice (~3/5)",
+        "quality": "low",
+        "student_text": "There are a lot of debates on whether it's an important part of child's education to take them on field trips or not. As far as I am concerned, taking child's to field trips can make them feel more independent giving them the security to do more things on their own. For example, I remember that on primary school I went on a camp to a forest. At that time I was afraid of darkness and about not sleeping on my parent's bed, but in that trip, I noticed that all my classmates where able to sleep by it's own, so when I came back home I never slept with my parents again. I understand both Kelly and Paul's opinion concerning the topic and I would like to agree with Paul because field trips help kids to know new things that can change their futures. Moreover, as it happened to Paul, they can find their interests in live. So, I definitively believe field trips are a crucial part of child's education.",
+        "detailed_evaluation": {
+          "total_score": 18,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 3,
+            "Language_Use": 2.5
+          },
+          "strengths": [
+            "Kişisel deneyim örneği verilmiş",
+            "Görüş net"
+          ],
+          "weaknesses": [
+            "Birçok gramer hatası",
+            "Zayıf akış ve organizasyon"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Subject-Verb_Agreement",
+            "location": "taking child's",
+            "correction": "taking children",
+            "explanation": "Child'ın çoğulu children'dır.",
+            "suggestion": "Çoğul isimleri doğru kullan.",
+            "improved_example": "taking children on field trips"
+          },
+          {
+            "category": "Syntactic Errors",
+            "tag": "Article_Usage",
+            "location": "on primary school",
+            "correction": "in primary school"
+          },
+          {
+            "category": "Lexical Errors",
+            "tag": "Word_Form_Error",
+            "location": "by it's own",
+            "correction": "on their own"
+          },
+          {
+            "category": "Discourse_Cohesion_Errors",
+            "tag": "Missing_Linkers",
+            "location": "Tüm metin",
+            "suggestion": "however, therefore, in addition kullan."
+          },
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Insufficient_Development",
+            "location": "Body paragraphs",
+            "suggestion": "Kelly ve Paul'un görüşlerini daha dengeli karşılaştır."
+          }
+        ]
+      },
+      {
+        "id": "REDDIT-T-W-IND-002",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Some people think that the best way to increase happiness is to spend money on experiences rather than possessions.",
+        "score_level": "3.5",
+        "rubric_reference": "Real student from r/ToeflAdvice",
+        "quality": "low",
+        "student_text": "I think experiences is better than buying things. When you buy a car or phone you get happy but after some time you get bored. But when you travel with friends you make memories that last forever. Experiences make you happy for longer time.",
+        "detailed_evaluation": {
+          "total_score": 20,
+          "criteria_scores": {
+            "Task_Response": 3.5,
+            "Organization": 3,
+            "Language_Use": 3
+          },
+          "strengths": [
+            "Temel karşılaştırma yapılmış"
+          ],
+          "weaknesses": [
+            "Tekrar eden basit kelimeler",
+            "Zayıf gelişme"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Subject-Verb_Agreement",
+            "location": "experiences is",
+            "correction": "experiences are"
+          },
+          {
+            "category": "Lexical Errors",
+            "tag": "Limited_Vocabulary_Range",
+            "location": "happy, bored, better",
+            "suggestion": "rewarding, lasting satisfaction, memorable gibi kelimeler dene."
+          },
+          {
+            "category": "Discourse_Cohesion_Errors",
+            "tag": "Repetition_of_Ideas",
+            "location": "Tüm metin"
+          }
+        ]
+      },
+      {
+        "id": "REDDIT-T-W-INT-001",
+        "exam": "TOEFL",
+        "task_type": "Integrated Writing",
+        "prompt": "Summarize the points made in the lecture and explain how they cast doubt on the points made in the reading passage. (Sea otters)",
+        "score_level": "4",
+        "rubric_reference": "Real student Integrated essay",
+        "quality": "mid",
+        "student_text": "Both the reading passage and the lecture discuss whether the decline in sea otter population is caused by pollution. The reading says pollution is the main reason and gives three reasons. However, the lecturer disagrees and says predation by orcas is more likely. First, the reading mentions that pollution levels are high... On the other hand, the lecturer says that other animals also declined... Second, the reading claims that pollution affects the immune system... The lecturer refutes this by saying... Finally...",
+        "detailed_evaluation": {
+          "total_score": 24,
+          "criteria_scores": {
+            "Content_Accuracy": 4,
+            "Organization": 4,
+            "Language_Use": 3.5
+          },
+          "strengths": [
+            "3 noktayı da ele almış",
+            "Karşılaştırma var"
+          ],
+          "weaknesses": [
+            "Bazı cümleler uzun ve karmaşık"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Lexical Errors",
+            "tag": "Collocation_Error",
+            "location": "gainsays the author",
+            "correction": "contradicts the author"
+          },
+          {
+            "category": "Syntactic Errors",
+            "tag": "Sentence_Fragment_RunOn",
+            "location": "Uzun cümleler",
+            "suggestion": "Cümleleri daha kısa tut."
+          }
+        ]
+      },
+      {
+        "id": "REDDIT-T-W-INT-002",
+        "exam": "TOEFL",
+        "task_type": "Integrated Writing",
+        "prompt": "Summarize the points made in the lecture and explain how they cast doubt on the points made in the reading passage. (Asteroid colonization)",
+        "score_level": "3.5",
+        "rubric_reference": "Real student from r/ToeflAdvice",
+        "quality": "low",
+        "student_text": "The reading passage and the lecture both discuss the outcomes of colonizing asteroids. The author presents three advantages but the lecturer disagrees and disputes all the arguments. First of all, the author notes that certain features... On the other hand, the lecturer points out that due to the absence of sufficient information... Secondly, the author claims that colonizing asteroids could be economically beneficial... This claim is refuted by the lecturer...",
+        "detailed_evaluation": {
+          "total_score": 21,
+          "criteria_scores": {
+            "Content_Accuracy": 3.5,
+            "Organization": 4,
+            "Language_Use": 3
+          },
+          "strengths": [
+            "Yapı nispeten iyi"
+          ],
+          "weaknesses": [
+            "Bazı noktalar eksik",
+            "Dil hataları netliği azaltıyor"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Tense_Consistency",
+            "location": "several places",
+            "explanation": "Present ve past tense karışık."
+          },
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Missing_Key_Points",
+            "location": "Ekonomik kısım",
+            "suggestion": "Transportation maliyeti detayını ekle."
+          }
+        ]
+      },
+      {
+        "id": "REDDIT-T-W-IND-003",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree? Technology has made our lives easier.",
+        "score_level": "3",
+        "rubric_reference": "Real student essay",
+        "quality": "low",
+        "student_text": "I agree that technology has made our lives easier. We can talk with friends easily with phone. We don't need to go to library because we can search on internet. But sometimes technology make us lazy because we don't do exercise.",
+        "detailed_evaluation": {
+          "total_score": 19,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 3,
+            "Language_Use": 2.5
+          },
+          "strengths": [
+            "Basit nedenler verilmiş"
+          ],
+          "weaknesses": [
+            "Çok kısa gelişme",
+            "Gramer hataları"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Subject-Verb_Agreement",
+            "location": "technology make",
+            "correction": "makes"
+          },
+          {
+            "category": "Lexical Errors",
+            "tag": "Limited_Vocabulary_Range",
+            "location": "easily, talk, search"
+          }
+        ]
+      },
+      {
+        "id": "REDDIT-T-W-IND-004",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Some people prefer living in small towns. Others prefer big cities.",
+        "score_level": "3.5",
+        "rubric_reference": "Real student from r/ToeflAdvice",
+        "quality": "mid",
+        "student_text": "I prefer living in a big city because there are more job opportunities and many cultural activities. Small towns are boring and people are not friendly. In big city you can meet different people and learn new things.",
+        "detailed_evaluation": {
+          "total_score": 22,
+          "criteria_scores": {
+            "Task_Response": 4,
+            "Organization": 3,
+            "Language_Use": 3
+          },
+          "strengths": [
+            "Net tercih belirtilmiş"
+          ],
+          "weaknesses": [
+            "Karşı görüş zayıf geliştirilmiş"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Discourse_Cohesion_Errors",
+            "tag": "Missing_Linkers",
+            "location": "Tüm metin",
+            "suggestion": "however, moreover ekle."
+          }
+        ]
+      },
+      {
+        "id": "REDDIT-T-W-INT-003",
+        "exam": "TOEFL",
+        "task_type": "Integrated Writing",
+        "prompt": "Summarize the points... (Topic: Groupthink)",
+        "score_level": "4",
+        "rubric_reference": "Real student Integrated",
+        "quality": "mid",
+        "student_text": "The lecture casts doubt on the reading passage about the advantages of groupthink. The reading says groupthink leads to better decisions but the professor disagrees and gives examples where groupthink caused bad decisions...",
+        "detailed_evaluation": {
+          "total_score": 23,
+          "criteria_scores": {
+            "Content_Accuracy": 4,
+            "Organization": 4,
+            "Language_Use": 3.5
+          },
+          "strengths": [
+            "Karşıt görüş iyi yakalanmış"
+          ],
+          "weaknesses": [
+            "Detaylarda eksiklik"
+          ]
+        },
+        "error_tags": []
+      },
+      {
+        "id": "REDDIT-T-W-IND-005",
+        "exam": "TOEFL",
+        "task_type": "Independent Writing",
+        "prompt": "Do you agree or disagree? It is better to work in a team than alone.",
+        "score_level": "3",
+        "rubric_reference": "Real student from r/ToeflAdvice",
+        "quality": "low",
+        "student_text": "I think working in a team is better. Because you can share ideas and help each other. When I work alone I get bored and make more mistakes. Teamwork make the work faster and more fun.",
+        "detailed_evaluation": {
+          "total_score": 17,
+          "criteria_scores": {
+            "Task_Response": 3,
+            "Organization": 2.5,
+            "Language_Use": 2.5
+          },
+          "strengths": [
+            "Basit nedenler"
+          ],
+          "weaknesses": [
+            "Tekrar ve gramer hataları"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Syntactic Errors",
+            "tag": "Subject-Verb_Agreement",
+            "location": "Teamwork make",
+            "correction": "makes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "golden_dataset": [
+      {
+        "id": "TELC-B1-W-001",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Dein Freund Paul schreibt dir, dass er bald seinen Führerschein macht. Er fragt dich nach Tipps und ob du Lust hast, mit ihm eine kleine Spritztour zu machen. Schreibe eine Antwort-E-Mail und gehe auf alle 4 Leitpunkte ein.",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Hallo Paul,\n\nherzlichen Glückwunsch zu deinem Führerschein! Ich finde es super, dass du endlich Auto fahren kannst. Ich habe meinen Führerschein letztes Jahr gemacht und kann dir ein paar Tipps geben: Am besten übst du zuerst auf ruhigen Straßen und achtest immer auf die Geschwindigkeitsbegrenzung.\n\nNatürlich habe ich Lust auf eine Spritztour mit dir! Wie wäre es am nächsten Wochenende? Wir können ans Meer fahren.\n\nIch freue mich schon sehr!\n\nLiebe Grüße\nEce",
+        "detailed_evaluation": {
+          "total_score": 43,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 5,
+            "Formale Richtigkeit": 4.5
+          },
+          "strengths": [
+            "Tüm 4 Leitpunkte detaylı ve doğal cevaplanmış",
+            "Akıcı bağlaç kullanımı",
+            "Uygun informal ton"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "TELC-B1-W-002",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Sie haben ein Hotelzimmer online gebucht, aber das Zimmer war laut und schmutzig. Schreiben Sie eine Beschwerde-E-Mail an das Hotel. Gehen Sie auf alle 4 Leitpunkte ein.",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Sehr geehrte Damen und Herren,\n\nvom 12. bis 15. Mai habe ich in Ihrem Hotel ein Zimmer gebucht. Leider war mein Aufenthalt nicht zufriedenstellend. Das Zimmer war sehr laut wegen der Bar gegenüber und außerdem nicht sauber.\n\nIch habe bereits versucht, mit der Rezeption zu sprechen, aber es hat sich nichts geändert. Deshalb möchte ich eine Entschädigung oder einen Teil des Geldes zurück.\n\nIch warte auf Ihre schnelle Rückmeldung.\n\nMit freundlichen Grüßen\nEce Yılmaz",
+        "detailed_evaluation": {
+          "total_score": 42,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 5,
+            "Formale Richtigkeit": 4
+          },
+          "strengths": [
+            "Resmi yapı ve akış mükemmel",
+            "Tüm noktalar kapsanmış"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "TELC-B1-W-003",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Deine Freundin hat dich eingeladen, sie am Wochenende zu besuchen. Schreibe eine Antwort und gehe auf die 4 Leitpunkte ein.",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Hallo Anna,\n\nvielen Dank für die Einladung! Ich komme sehr gerne am Samstag. Ich bringe einen Kuchen mit und vielleicht einen Film, den wir zusammen schauen können.\n\nWir können spazieren gehen oder kochen. Ich freue mich schon riesig!\n\nLiebe Grüße\nEce",
+        "detailed_evaluation": {
+          "total_score": 44,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 5,
+            "Formale Richtigkeit": 5
+          },
+          "strengths": [
+            "Kısa, net ve doğal B1 seviyesi"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "TELC-B1-W-004",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Sie haben ein Smartphone online gekauft, aber es hat Probleme. Schreiben Sie eine Beschwerde-E-Mail.",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Hallo,\n\nIch habe ein Handy bei Ihnen gekauft. Es ist kaputt. Der Akku geht schnell leer. Bitte Geld zurück.\n\nEce",
+        "detailed_evaluation": {
+          "total_score": 24,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 3,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [
+            "Temel şikayet var"
+          ],
+          "weaknesses": [
+            "Resmi yapı eksik",
+            "Detay yok",
+            "Çok kısa"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Missing_Key_Points",
+            "location": "Tüm metin",
+            "suggestion": "Tüm 4 Leitpunkteyi detaylı yaz (tarih, model, sorun, çözüm talebi)."
+          },
+          {
+            "category": "Lexical Errors",
+            "tag": "Register_Inappropriateness",
+            "location": "Hallo",
+            "correction": "Sehr geehrte Damen und Herren",
+            "explanation": "Beschwerdebrief resmi olmalı."
+          }
+        ]
+      },
+      {
+        "id": "TELC-B1-W-005",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Erzähle deiner Freundin von deinem letzten Urlaub in der Türkei und beantworte ihre Fragen.",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Hallo Anna,\n\nIch war in Antalya. Das Wetter war gut. Ich habe geschwommen. Das Essen war lecker. Ich möchte wieder hinfahren.\n\nTschüss\nEce",
+        "detailed_evaluation": {
+          "total_score": 26,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 3,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Leitpunkte çok yüzeysel",
+            "Bağlaç yok"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Discourse_Cohesion_Errors",
+            "tag": "Missing_Linkers",
+            "location": "Tüm metin",
+            "suggestion": "weil, außerdem, deshalb kullan."
+          },
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Insufficient_Development",
+            "location": "Tüm metin",
+            "suggestion": "Her nokta için en az 2 cümle yaz."
+          }
+        ]
+      },
+      {
+        "id": "TELC-B1-W-006",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Du hast ein Paar Schuhe online bestellt, aber sie sind zu klein.",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Sehr geehrte,\n\nIch habe Schuhe gekauft. Sie sind zu klein. Bitte umtauschen.\n\nViele Grüße\nEce",
+        "detailed_evaluation": {
+          "total_score": 25,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 3,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Detay eksik (tarih, model, sorun tanımı)"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Task_Achievement_Content_Errors",
+            "tag": "Missing_Key_Points",
+            "location": "Tüm metin"
+          }
+        ]
+      },
+      {
+        "id": "TELC-B1-W-007",
+        "exam": "TELC",
+        "task_type": "B1 Informelle E-Mail",
+        "prompt": "Schreibe eine E-Mail über deine neue Wohnung.",
+        "score_level": "gut",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "high",
+        "student_text": "Hallo Lisa,\n\nich habe endlich eine neue Wohnung gefunden! Sie ist klein aber sehr hell und hat einen Balkon. Die Lage ist super, nur 10 Minuten zur U-Bahn.\n\nNächste Woche ziehe ich ein. Hast du Lust, mir beim Umzug zu helfen?\n\nLiebe Grüße\nEce",
+        "detailed_evaluation": {
+          "total_score": 41,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 5,
+            "Kommunikative Gestaltung": 4.5,
+            "Formale Richtigkeit": 4.5
+          },
+          "strengths": [
+            "Doğal ve akıcı"
+          ],
+          "weaknesses": []
+        },
+        "error_tags": []
+      },
+      {
+        "id": "TELC-B1-W-008",
+        "exam": "TELC",
+        "task_type": "B1 Beschwerdebrief",
+        "prompt": "Du hast ein Online-Kurs gebucht, aber die Materialien sind schlecht.",
+        "score_level": "ausreichend",
+        "rubric_reference": "telc Deutsch B1 Schreiben Bewertungskriterien",
+        "quality": "low",
+        "student_text": "Hallo,\n\nDer Kurs ist schlecht. Die Materialien sind alt. Bitte Geld zurück.\n\nEce",
+        "detailed_evaluation": {
+          "total_score": 22,
+          "criteria_scores": {
+            "Aufgabenbewältigung": 2,
+            "Kommunikative Gestaltung": 2,
+            "Formale Richtigkeit": 3
+          },
+          "strengths": [],
+          "weaknesses": [
+            "Resmiyet eksik",
+            "Çok kısa ve kaba"
+          ]
+        },
+        "error_tags": [
+          {
+            "category": "Lexical Errors",
+            "tag": "Register_Inappropriateness",
+            "location": "Hallo",
+            "correction": "Sehr geehrte Damen und Herren"
+          }
+        ]
+      }
+    ]
+  }
+]
+}

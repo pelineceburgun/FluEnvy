@@ -1,0 +1,209 @@
+[
+  {
+    "id": "T-001",
+    "exam": "TOEFL",
+    "task_type": "Academic Discussion",
+    "prompt": "Should governments prioritize environmental protection over economic growth?",
+    "student_text": "In my opinion, environmental protection is more important. However, many governments focuses only on money. This leads to long-term damage.",
+    "evaluation": {
+      "total_score": 24,
+      "max_score": 30,
+      "detailed_feedback": [
+        {
+          "category": "Grammar",
+          "error_tag": "Subject-Verb Agreement",
+          "location": "governments focuses",
+          "correction": "governments focus",
+          "explanation": "Çoğul öznelerde (governments) fiile -s takısı gelmez."
+        },
+        {
+          "category": "Vocabulary",
+          "feedback": "Kelime seçimi doğru ama 'money' yerine 'economic stability' veya 'revenue' kullanmak akademik seviyeni artırır."
+        },
+        {
+          "category": "Task Response",
+          "feedback": "Görüşünü net belirtmişsin ancak karşı argümanı (economic growth) yeterince ele almamışsın. Daha dengeli bir tartışma beklenir."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GER-001",
+    "exam": "TELC",
+    "task_type": "Beschwerdebrief (Şikayet Mektubu)",
+    "prompt": "Sie haben ein Handy gekauft, ama bozuk çıktı. Bir şikayet maili yazın.",
+    "student_text": "Sehr geehrte Damen und Herren, ich habe ein Handy bei Ihnen gekauft. Aber das Handy ist kaputt. Ich möchte mein Geld zurück.",
+    "evaluation": {
+      "total_score": 35,
+      "max_score": 45,
+      "detailed_feedback": [
+        {
+          "category": "Structure",
+          "feedback": "Giriş ve sonuç kısımları doğru ancak cümleler çok kısa ve basit (B1 altı)."
+        },
+        {
+          "category": "Connectors",
+          "error_tag": "Missing Linkers",
+          "suggestion": "Cümleleri 'weil' veya 'obwohl' ile bağlayarak seviyeni B1'e çekebilirsin.",
+          "example": "Ich schreibe Ihnen, weil das Handy, das ich gestern gekauft habe, kaputt ist."
+        },
+        {
+          "category": "Task Achievement",
+          "feedback": "Şikayet nedeni ve çözüm talebi belirtilmiş ama detay (model, satın alma tarihi) eksik."
+        }
+      ]
+    }
+  },
+  {
+    "id": "T-002",
+    "exam": "TOEFL",
+    "task_type": "Independent Writing",
+    "prompt": "Some people prefer to live in a small town. Others prefer to live in a big city. Which place would you prefer to live in? Use specific reasons and examples to support your answer.",
+    "student_text": "I would prefer living in a big city. Because there are many job opportunities and cultural activities. Small towns are boring and people are not friendly.",
+    "evaluation": {
+      "total_score": 27,
+      "max_score": 30,
+      "detailed_feedback": [
+        {
+          "category": "Grammar",
+          "error_tag": "Article Usage",
+          "location": "living in a big city",
+          "correction": "living in a big city",
+          "explanation": "Cümle doğru ama 'living' yerine 'to live' daha doğal olurdu. Genel olarak gramerin çok iyi."
+        },
+        {
+          "category": "Vocabulary Diversity",
+          "feedback": "'Boring' yerine 'limited entertainment options' veya 'lack of excitement' kullanarak akademik kelime dağarcığını genişletebilirsin."
+        },
+        {
+          "category": "Organization",
+          "feedback": "Giriş, gelişme ve sonuç paragrafı net. Ancak örnekler (job opportunities) daha somut olabilirdi (örneğin belirli bir sektör)."
+        },
+        {
+          "category": "Task Response",
+          "feedback": "Konuya tam uyumlu ve dengeli. TOEFL bağımsız yazma rubriğinde 4.0 seviyesine çok yakın."
+        }
+      ]
+    }
+  },
+  {
+    "id": "T-S001",
+    "exam": "TOEFL",
+    "task_type": "Independent Speaking (Task 1)",
+    "prompt": "Describe a person who has influenced your life and explain why.",
+    "student_text": "Um... my high school teacher Mr. Johnson influenced me a lot. He always motivated me to study hard. Because of him I learned to never give up. He was very patient and kind.",
+    "evaluation": {
+      "total_score": 22,
+      "max_score": 30,
+      "detailed_feedback": [
+        {
+          "category": "Fluency",
+          "error_tag": "Fillers & Pauses",
+          "location": "Um...",
+          "suggestion": "Konuşmaya direkt başla. 'Um' ve uzun duraksamalar puanını düşürür.",
+          "explanation": "TOEFL Speaking rubriğinde Delivery (akıcılık) çok önemli."
+        },
+        {
+          "category": "Vocabulary",
+          "feedback": "'Motivated' ve 'patient' iyi kelimeler. 'Never give up' yerine 'perseverance' gibi daha akademik kelimeler kullanabilirsin."
+        },
+        {
+          "category": "Pronunciation & Intonation",
+          "feedback": "Transkriptte net ama gerçek kayıtta 'because' kelimesini vurgulamayı unutma. Genel telaffuzun iyi."
+        },
+        {
+          "category": "Task Response",
+          "feedback": "Kişiyi ve etkisini açıklamışsın ancak örnek (hangi konuda motive etti?) ekleyerek daha güçlü hale getirebilirsin."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GER-002",
+    "exam": "TELC",
+    "task_type": "B1 Schreiben: Informelle E-Mail",
+    "prompt": "Schreiben Sie eine E-Mail an einen Freund über Ihre letzten Ferien in der Türkei.",
+    "student_text": "Hallo Anna, letztes Woche war ich in Antalya. Das Wetter war super und das Meer war schön. Ich habe viel geschwommen. Die türkische Essen ist sehr lecker.",
+    "evaluation": {
+      "total_score": 38,
+      "max_score": 45,
+      "detailed_feedback": [
+        {
+          "category": "Grammar",
+          "error_tag": "Adjective Declension",
+          "location": "Die türkische Essen",
+          "correction": "Das türkische Essen",
+          "explanation": "Almanca'da cinsiyete göre artikel değişir. 'Essen' nötr olduğu için 'das' kullanılır."
+        },
+        {
+          "category": "Connectors & Cohesion",
+          "feedback": "'Und' çok kullanılmış. 'Deshalb' veya 'außerdem' ekleyerek akışı iyileştirebilirsin."
+        },
+        {
+          "category": "Task Achievement (B1)",
+          "feedback": "Tatil deneyimi anlatılmış ama duygu ve planlar (neden Antalya?) eksik. B1 seviyesinde daha detaylı beklenti var."
+        },
+        {
+          "category": "Vocabulary",
+          "feedback": "'Super' günlük dil. Resmiyet için 'wunderbar' veya 'fantastisch' daha uygun."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GER-S001",
+    "exam": "TELC",
+    "task_type": "B1 Mündliche Prüfung (Monolog - 2 Minuten)",
+    "prompt": "Beschreiben Sie Ihr Lieblingsfest oder Feiertag in der Türkei und erklären Sie, warum es Ihnen gefällt.",
+    "student_text": "Mein Lieblingsfest ist Bayram. Wir besuchen Familie und essen viel. Die Kinder bekommen Geld. Es ist sehr lustig weil alle zusammen sind.",
+    "evaluation": {
+      "total_score": 31,
+      "max_score": 40,
+      "detailed_feedback": [
+        {
+          "category": "Fluency",
+          "feedback": "Cümleler akıcı ama 'weil' ile bağladığın yerlerde duraksama olabilir. Daha doğal konuşma hızı hedefle."
+        },
+        {
+          "category": "Pronunciation",
+          "feedback": "'Bayram' ve 'Familie' telaffuzun çok iyi. Genel olarak anlaşılır Almanca."
+        },
+        {
+          "category": "Structure",
+          "error_tag": "Missing Conclusion",
+          "suggestion": "Konuşmayı 'Zusammenfassend kann ich sagen...' ile bitir.",
+          "example": "Zusammenfassend ist Bayram für mich das wichtigste Fest."
+        },
+        {
+          "category": "Vocabulary & Content",
+          "feedback": "B1 seviyesine uygun ama 'gemeinsam feiern' veya 'traditionelle Gerichte' gibi ifadeler ekleyerek kelime çeşitliliğini artır."
+        }
+      ]
+    }
+  },
+  {
+    "id": "T-003",
+    "exam": "TOEFL",
+    "task_type": "Integrated Writing (Summary)",
+    "prompt": "Summarize the points made in the lecture and explain how they cast doubt on the points made in the reading passage. (Reading: Advantages of remote work / Lecture: Disadvantages)",
+    "student_text": "The lecture says that remote work has many problems. First, people feel lonely. Second, it is hard to collaborate. This casts doubt on the reading that says remote work increases productivity.",
+    "evaluation": {
+      "total_score": 23,
+      "max_score": 30,
+      "detailed_feedback": [
+        {
+          "category": "Content Accuracy",
+          "feedback": "Lecture ve reading arasındaki bağlantıyı doğru yakalamışsın. Ancak lecture'daki üçüncü noktayı (management issues) atlamışsın."
+        },
+        {
+          "category": "Grammar & Sentence Variety",
+          "feedback": "Cümleler basit ama TOEFL integrated writing'de daha karmaşık yapı (although, while) beklenir."
+        },
+        {
+          "category": "Vocabulary",
+          "feedback": "'Cast doubt' doğru akademik ifade. Tebrikler!"
+        }
+      ]
+    }
+  }
+]

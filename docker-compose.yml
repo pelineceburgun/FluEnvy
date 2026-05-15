@@ -1,0 +1,39 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+  chroma:
+    image: chromadb/chroma:latest
+    container_name: chroma
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    restart: unless-stopped
+
+  fastapi:
+    build: ./backend
+    container_name: fastapi-backend
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - DATABASE_URL=sqlite:////app/toefl_platform.db
+      - OLLAMA_URL=http://ollama:11434
+      - CHROMA_DIR=/app/chroma_db
+      - GOLDEN_DATASET_PATH=/app/data/golden_dataset.json
+    depends_on:
+      - ollama
+      - chroma
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+  chroma_data:

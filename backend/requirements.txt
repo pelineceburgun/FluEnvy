@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pydantic
+langchain
+langchain-community
+langchain-ollama
+langchain-huggingface
+chromadb
+sentence-transformers
+python-multipart
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
+torchaudio --index-url https://download.pytorch.org/whl/cpu
+huggingface-hub
+faster-whisper
+pydub
+sqlalchemy
